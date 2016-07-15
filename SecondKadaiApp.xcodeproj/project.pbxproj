@@ -12,6 +12,7 @@
 		A3318BC01D3880A000BF2B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3318BBE1D3880A000BF2B28 /* Main.storyboard */; };
 		A3318BC21D3880A000BF2B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3318BC11D3880A000BF2B28 /* Assets.xcassets */; };
 		A3318BC51D3880A000BF2B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3318BC31D3880A000BF2B28 /* LaunchScreen.storyboard */; };
+		A3318BCD1D38820500BF2B28 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3318BCC1D38820500BF2B28 /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A3318BC11D3880A000BF2B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3318BC41D3880A000BF2B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3318BC61D3880A000BF2B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3318BCC1D38820500BF2B28 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				A3318BBA1D3880A000BF2B28 /* AppDelegate.swift */,
 				A3318BBC1D3880A000BF2B28 /* ViewController.swift */,
 				A3318BBE1D3880A000BF2B28 /* Main.storyboard */,
+				A3318BCC1D38820500BF2B28 /* HelloViewController.swift */,
 				A3318BC11D3880A000BF2B28 /* Assets.xcassets */,
 				A3318BC31D3880A000BF2B28 /* LaunchScreen.storyboard */,
 				A3318BC61D3880A000BF2B28 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3318BCD1D38820500BF2B28 /* HelloViewController.swift in Sources */,
 				A3318BBD1D3880A000BF2B28 /* ViewController.swift in Sources */,
 				A3318BBB1D3880A000BF2B28 /* AppDelegate.swift in Sources */,
 			);

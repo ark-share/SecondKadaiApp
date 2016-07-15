@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,133 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-Iy-mkC">
+                                <rect key="frame" x="238" y="131" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="EtZ-eC-MnS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgR-6w-vJq">
+                                <rect key="frame" x="207" y="100" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uek-Er-9Ly">
+                                <rect key="frame" x="285" y="171" width="30" height="30"/>
+                                <state key="normal" title="決定"/>
+                                <connections>
+                                    <segue destination="BtD-mJ-zTG" kind="show" id="wrn-jZ-pnq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qgR-6w-vJq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="1NJ-kl-iDK"/>
+                            <constraint firstItem="Uek-Er-9Ly" firstAttribute="top" secondItem="0Cf-Iy-mkC" secondAttribute="bottom" constant="10" id="2xQ-vu-nkB"/>
+                            <constraint firstItem="0Cf-Iy-mkC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="125" id="Ehg-Tt-m1s"/>
+                            <constraint firstItem="0Cf-Iy-mkC" firstAttribute="top" secondItem="qgR-6w-vJq" secondAttribute="bottom" constant="140" id="H1F-ta-IoY"/>
+                            <constraint firstItem="Uek-Er-9Ly" firstAttribute="top" secondItem="0Cf-Iy-mkC" secondAttribute="bottom" constant="10" id="NEL-zM-z4B"/>
+                            <constraint firstItem="Uek-Er-9Ly" firstAttribute="top" secondItem="qgR-6w-vJq" secondAttribute="bottom" constant="180" id="NJ5-M9-ehD"/>
+                            <constraint firstItem="0Cf-Iy-mkC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OCk-MS-h9y"/>
+                            <constraint firstItem="qgR-6w-vJq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKh-mA-nbi"/>
+                            <constraint firstItem="Uek-Er-9Ly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pN1-h7-ooE"/>
+                            <constraint firstItem="Uek-Er-9Ly" firstAttribute="top" secondItem="qgR-6w-vJq" secondAttribute="bottom" constant="180" id="tny-FU-0fo"/>
+                            <constraint firstItem="Uek-Er-9Ly" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="150" id="v23-cm-ETf"/>
+                            <constraint firstItem="0Cf-Iy-mkC" firstAttribute="top" secondItem="qgR-6w-vJq" secondAttribute="bottom" constant="10" id="xVy-ds-ywK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ehg-Tt-m1s"/>
+                                <exclude reference="H1F-ta-IoY"/>
+                                <exclude reference="NEL-zM-z4B"/>
+                                <exclude reference="NJ5-M9-ehD"/>
+                                <exclude reference="tny-FU-0fo"/>
+                                <exclude reference="v23-cm-ETf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="field" destination="0Cf-Iy-mkC" id="v5B-Zm-uzi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-402" y="753"/>
+        </scene>
+        <!--Hello View Controller-->
+        <scene sceneID="WXe-6j-e1g">
+            <objects>
+                <viewController id="BtD-mJ-zTG" customClass="HelloViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XbG-TM-API"/>
+                        <viewControllerLayoutGuide type="bottom" id="y3Y-tN-FQP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BcO-cI-yG1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIu-7i-BaN">
+                                <rect key="frame" x="279" y="100" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-Xc-5Tk">
+                                <rect key="frame" x="285" y="131" width="30" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="qP4-3Y-A5y" kind="unwind" unwindAction="unwind:" id="qo7-J1-DxM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="top" secondItem="VIu-7i-BaN" secondAttribute="bottom" constant="10" id="BSd-bK-4iA"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="centerX" secondItem="BcO-cI-yG1" secondAttribute="centerX" id="KVC-25-ceX"/>
+                            <constraint firstItem="VIu-7i-BaN" firstAttribute="top" secondItem="XbG-TM-API" secondAttribute="bottom" constant="100" id="NmD-h8-2I1"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="top" secondItem="VIu-7i-BaN" secondAttribute="bottom" constant="100" id="Smv-U8-pHn"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="centerX" secondItem="BcO-cI-yG1" secondAttribute="centerX" id="XFz-q9-ZZ0"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="centerX" secondItem="VIu-7i-BaN" secondAttribute="centerX" id="aFV-fx-JAL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b7h-Xc-5Tk" secondAttribute="trailing" id="git-nq-pnC"/>
+                            <constraint firstItem="VIu-7i-BaN" firstAttribute="centerX" secondItem="BcO-cI-yG1" secondAttribute="centerX" id="h63-Wj-Mqn"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="top" secondItem="VIu-7i-BaN" secondAttribute="bottom" constant="10" id="kEn-d2-vHN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VIu-7i-BaN" secondAttribute="trailing" id="koW-0Y-VYM"/>
+                            <constraint firstItem="VIu-7i-BaN" firstAttribute="top" secondItem="BcO-cI-yG1" secondAttribute="topMargin" constant="100" id="m5B-0I-FpB"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="top" secondItem="VIu-7i-BaN" secondAttribute="bottom" constant="10" id="nbc-4G-NeF"/>
+                            <constraint firstItem="y3Y-tN-FQP" firstAttribute="top" secondItem="b7h-Xc-5Tk" secondAttribute="bottom" id="pBR-MH-7Gs"/>
+                            <constraint firstItem="VIu-7i-BaN" firstAttribute="leading" secondItem="BcO-cI-yG1" secondAttribute="leadingMargin" id="uYd-he-bPd"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="leading" secondItem="BcO-cI-yG1" secondAttribute="leadingMargin" id="vfr-zL-hva"/>
+                            <constraint firstItem="b7h-Xc-5Tk" firstAttribute="top" secondItem="VIu-7i-BaN" secondAttribute="bottom" id="zAe-vX-8kv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NmD-h8-2I1"/>
+                                <exclude reference="koW-0Y-VYM"/>
+                                <exclude reference="uYd-he-bPd"/>
+                                <exclude reference="BSd-bK-4iA"/>
+                                <exclude reference="Smv-U8-pHn"/>
+                                <exclude reference="XFz-q9-ZZ0"/>
+                                <exclude reference="aFV-fx-JAL"/>
+                                <exclude reference="git-nq-pnC"/>
+                                <exclude reference="nbc-4G-NeF"/>
+                                <exclude reference="vfr-zL-hva"/>
+                                <exclude reference="zAe-vX-8kv"/>
+                                <exclude reference="pBR-MH-7Gs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="VIu-7i-BaN" id="Maa-nL-Z1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6e-VP-j1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qP4-3Y-A5y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="791"/>
         </scene>
     </scenes>
 </document>
